@@ -45,9 +45,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: "Webpack App",
-      filename: "index.html",
-      template: "src/index.html",
+      title: "Anti-procrastination App",
+      template: path.resolve(__dirname, "src/index.html"),
+      inject: true,
     }),
     new MiniCssExtractPlugin(),
   ],
